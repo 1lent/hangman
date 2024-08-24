@@ -5,15 +5,12 @@ import java.util.*
 fun main() {
     val reader = Scanner(System.`in`)
 
-
     val words = arrayOf("apple", "book", "chair", "dog", "elephant", "fish", "grape", "house", "ice", "jacket", "kite", "lamp", "moon", "nest", "orange", "pencil", "queen", "rain", "sun", "tree")
     val randomwords = words.randomOrNull()
 
     for (i in 1..10) {
         println("Loading.. ")
     }
-
-
 
     //println("\nThe word has $length letters")
     val result: String
@@ -28,14 +25,5 @@ fun main() {
         print("Hangman errors: $hangmancount")
     } else {
         println("You got it!")
-
-
-
-
     }
-
-
-
-
-
 }
