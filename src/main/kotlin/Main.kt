@@ -15,14 +15,15 @@ fun main() {
     //println("\nThe word has $length letters")
     val result: String
 
-    println("Enter a word to guess:")
+    println("Enter a word to guess (lowecase): ")
     val guess = reader.next()
     var hangmancount = 0
 
     if (guess != randomwords) {
-        println("You got it wrong")
+        println("You got it wrong!")
         hangmancount++
-        print("Hangman errors: $hangmancount")
+        println("Hangman errors: $hangmancount")
+        println("It was $randomwords")
     } else {
         println("You got it!")
     }
