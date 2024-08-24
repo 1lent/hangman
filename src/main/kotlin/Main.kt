@@ -19,12 +19,21 @@ fun main() {
     val guess = reader.next()
     var hangmancount = 0
 
-    if (guess != randomwords) {
-        println("You got it wrong!")
-        hangmancount++
-        println("Hangman errors: $hangmancount")
-        println("It was $randomwords")
-    } else {
-        println("You got it!")
-    }
-}
+    while (true) {
+        if (guess == randomwords) {
+            println("You got it!")
+            break
+        } else {
+            println("You got it wrong!")
+            hangmancount++
+            println("Hangman errors: $hangmancount")
+            println("It was $randomwords")
+            for (i in 1..10) {
+                println("Loading new game...")
+            }
+            println("Enter a word to guess (lowecase): ")
+            val guess = reader.next()
+            continue
+
+        }
+    }}
