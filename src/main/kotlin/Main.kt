@@ -3,11 +3,10 @@ import java.util.*
 
 
 fun main() {
-    val reader = Scanner(System.`in`)
+
 
     val words = arrayOf("apple", "book", "chair", "dog", "elephant", "fish", "grape", "house", "ice", "jacket", "kite", "lamp", "moon", "nest", "orange", "pencil", "queen", "rain", "sun", "tree")
     val randomwords = words.randomOrNull()
-
     for (i in 1..2) {
         println("Loading.. ")
     }
@@ -15,8 +14,8 @@ fun main() {
     //println("\nThe word has $length letters")
     val result: String
 
-    println("Enter a word to guess (lowecaser): ")
-    val guess = reader.next()
+    println("Enter a word to guess (lowercase): ")
+    val guess = readln()
     var hangmancount = 0
 
     while (true) {
@@ -30,11 +29,9 @@ fun main() {
             println("It was $randomwords")
             for (i in 1..2) {
                 println(" ")
-
             }
-            println("Enter a word to guess (lowecase): ")
-            val guess = reader.next()
+            println("Enter a word to guess (lowercase): ")
+            val guess = readln()
             continue
-
         }
     }}
